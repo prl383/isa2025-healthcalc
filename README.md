@@ -1,6 +1,8 @@
 # isa2025-healthcalc
 Health calculator used in Ingeniería del Software Avanzada
 
+# PRACTICA 1
+
 # Casos de prueba para HealthCalc P1
 
 ### Casos de prueba para el metodo idealWeight
@@ -26,3 +28,7 @@ Health calculator used in Ingeniería del Software Avanzada
 8. Valores con **decimales** en peso (`65.7 kg`) y edad (`25.5 años`).  
 9.  Valores **no numericos o vacios** en cualquier parametro.  
 
+# PRACTICA 2
+### Diagrama de caso de uso modificado  
+
+![Diagrama de caso de uso modificado](doc/diagramaCasoUsoCalc.jpg)
