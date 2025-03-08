@@ -24,6 +24,10 @@ Health calculator used in Ingeniería del Software Avanzada
 
 ![Resultados de los test](doc/Resultado_Test.png)
 
+### Commits realizados durante el desarrollo de las prácticas
+
+![Commits realizados](doc/Captura_Commits.png)
+
 
 # PRACTICA 2
 ## Diagrama de caso de uso modificado  
