@@ -8,25 +8,18 @@ Health calculator used in Ingeniería del Software Avanzada
 ### Casos de prueba para el metodo idealWeight
 
 1. `height` no puede ser **0 o negativo** → Debe lanzar una excepcion.  
-2. `height` debe estar en **centimetros**.  
-3. `gender` solo puede ser **'m'** o **'w'** → Si se introduce otro carater, debe lanzar una excepcion.  
-4. El resultado **debe ser positivo** y estar en **kg**.
-5. Alturas **muy bajas y muy altas**: `50 cm` vs. `250 cm`.  
-6. Genero en **minuscula** (`'m'`, `'w'`).  
-7. Valores **con decimales** en la altura (`175.5 cm`).  
-8. **Entrada de datos incorrecta**: `null`, valores vacios o caracteres en la altura.  
+2. `gender` solo puede ser **'m'** o **'w'** → Si se introduce otro carater, debe lanzar una excepcion.  
+3. Alturas **muy bajas y muy altas**: `10 cm` vs. `400 cm`.  
+4. Genero en **minuscula** (`'m'`, `'w'`).     
   
 ### Casos de prueba para el metodo basalMetabolicRate
 
-1. `weight` no puede ser **0 o negativo** → Debe lanzar una excepcion.  
-2. `weight` debe estar en **kg**.  
-3. `height` debe estar en **cm**.  
-4. `age` no puede ser **negativo, cero o un numero demasiado alto** (`>100 años`).  
-5. `gender` solo puede ser **'m'** o **'w'** → Si es diferente, debe lanzar una excepcion.  
-6. El resultado **no debe ser negativo ni cero**.  
-7. Valores **extremos** de peso (`30 kg`, `300 kg`).  
-8. Valores con **decimales** en peso (`65.7 kg`) y edad (`25.5 años`).  
-9.  Valores **no numericos o vacios** en cualquier parametro.  
+1. `weight` no puede ser **0** → Debe lanzar una excepcion. 
+2. `weight` no puede ser **negativo** → Debe lanzar una excepcion.  
+3. `age` no puede ser **negativo, cero o un numero demasiado alto** (`>120 años`).  
+4. `gender` solo puede ser **'m'** o **'w'** → Si es diferente, debe lanzar una excepcion.  
+5. Valores **extremos** de peso (`1 kg`, `200 kg`).  
+
 
 # PRACTICA 2
 ## Diagrama de caso de uso modificado  
