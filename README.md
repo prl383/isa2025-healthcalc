@@ -20,6 +20,10 @@ Health calculator used in Ingeniería del Software Avanzada
 4. `gender` solo puede ser **'m'** o **'w'** → Si es diferente, debe lanzar una excepcion.  
 5. Valores **extremos** de peso (`1 kg`, `200 kg`).  
 
+### Resultados de los test en Maven
+
+![Resultados de los test](doc/Resultado_Test.png)
+
 
 # PRACTICA 2
 ## Diagrama de caso de uso modificado  
