@@ -26,3 +26,10 @@ Health calculator used in Ingeniería del Software Avanzada
 8. Valores con **decimales** en peso (`65.7 kg`) y edad (`25.5 años`).  
 9.  Valores **no numericos o vacios** en cualquier parametro.  
 
+### Práctica 4: Interfaz gráfica de usuario
+
+**Boceto HealthCalc hecho en Pencil:**  
+![Boceto](doc/BocetoHealthCalc.png)
+
+**Diseño final de HealthCalc hecho en WindowBuilder:**  
+![Diseño final](doc/ImagenDisenoHealthcalc.png)
