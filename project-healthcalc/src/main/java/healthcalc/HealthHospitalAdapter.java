@@ -1,8 +1,13 @@
 package healthcalc;
 
 public class HealthHospitalAdapter implements HealthHospital {
-
-    private final HealthCalcImpl calc = HealthCalcImpl.getInstance();
+     
+    //hacer el constructor que le pase la calculadora (flecha blanca)
+    private final HealthCalcImpl calc;
+    public HealthHospitalAdapter(HealthCalcImpl calc) {
+        this.calc = calc;
+    }
+    
 
     @Override
     public double bmr(char genero, int edad, float alturaMetros, int pesoGramos) {
