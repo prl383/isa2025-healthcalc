@@ -33,3 +33,23 @@ Health calculator used in Ingeniería del Software Avanzada
 
 **Diseño final de HealthCalc hecho en WindowBuilder:**  
 ![Diseño final](doc/ImagenDisenoHealthcalc.png)
+
+### Práctica 6: Patrones de diseño
+
+**EJERCICIO 1**
+**Patrón Singleton:**
+
+![Patrón Singleton](design_patterns/PatronSingletonHealthCalc.png)
+
+**EJERCICIO 2**
+**Apartado a: Patrón Adapter**
+
+![Patrón Adapter](design_patterns/PatronAdapterHealthCalc.png)
+
+**Apartado b: Patrón Proxy**
+
+![Patrón Proxy](design_patterns/PatronProxyHealthCalc.png)
+
+**Apartado c: Patrón Decorator**
+
+![Patrón Decorator](design_patterns/PatronDecoratorHealthCalc.png)
