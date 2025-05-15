@@ -10,6 +10,20 @@ public class Main {
 
         // Creamos el adaptador con el proxy como dependencia
         HealthHospital hospitalCalc = new HealthHospitalAdapter(proxyCalc);
+        // Version europea con mensajes en ambos idiomas
+        HealthHospital spanish = new SpanishMessageDecorator(hospitalCalc);
+        HealthHospital fullMessages = new EnglishMessageDecorator(spanish);
+
+        // Version americana con s
+        HealthHospital american = new EnglishMessageDecorator(
+                                        new SpanishMessageDecorator(
+                                            new AmericanUnitsDecorator(hospitalCalc)));
+
+        System.out.println("Versión europea:");
+        fullMessages.bmr('m', 30, 1.83f, 78000);
+
+        System.out.println("\nVersión americana:");
+        american.bmr('f', 25, 1.83f, 50000);
 
         //hospitalCalc como interfaz principal del hospital
         double bmr = hospitalCalc.bmr('m', 40, 1.80f, 80000); 
