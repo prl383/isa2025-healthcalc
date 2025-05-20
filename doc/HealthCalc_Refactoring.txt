@@ -1,0 +1,34 @@
+
+Refactoring - HealthCalc 
+-----------------------------
+
+(1) Bad Smell: Clase con demasiadas responsabilidades (Dios)
+(2) Refactoring aplicado: Extracción de interfaz (HealthCalc), creación de implementación concreta (HealthCalcImpl)
+(3) Tipo: Class refactoring
+(4) Se ha extraído la lógica de cálculo de peso ideal y tasa metabólica basal a una clase concreta que implementa una interfaz común. Esto facilita la inyección de dependencias y desacopla el sistema.
+(5) Cambios manuales: 2 clases nuevas creadas (HealthCalc, HealthCalcImpl), 10 líneas modificadas en clases existentes.
+
+---
+
+(1) Bad Smell: Duplicación de lógica de validación en métodos
+(2) Refactoring aplicado: Consolidación de validaciones dentro de métodos
+(3) Tipo: Method refactoring
+(4) Se ha agrupado y centralizado la lógica de validación de entradas en los métodos 'idealWeight' y 'basalMetabolicRate' de 'HealthCalcImpl' para evitar repetición.
+(5) Cambios manuales: 2 métodos modificados, 15 líneas ajustadas manualmente.
+
+---
+
+(1) Bad Smell: Métodos con muchos parámetros
+(2) Refactoring aplicado: Introducción del objeto parámetro (clase Person y BasicPerson)
+(3) Tipo: Class refactoring + Method refactoring
+(4) Se han reemplazado los múltiples parámetros por un único parámetro `Person` para facilitar la extensibilidad y claridad del código.
+(5) Cambios manuales: 3 clases modificadas (HealthCalcImpl, HealthStatsProxy, Controlador), 12 líneas ajustadas.
+
+---
+
+(1) Bad Smell: Conversión manual de tipos desde interfaz gráfica
+(2) Refactoring aplicado: Adaptación del controlador para usar Person y Gender
+(3) Tipo: Method refactoring
+(4) Se ha modificado el controlador para transformar las entradas de la interfaz gráfica a un objeto 'BasicPerson' con el tipo enumerado 'Gender'.
+(5) Cambios manuales: 1 clase modificada, 10 líneas modificadas manualmente.
+
